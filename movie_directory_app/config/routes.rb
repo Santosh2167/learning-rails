@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reviews
   # get 'movies/index'
   # get 'movies/show/:id'
   # post 'movies/create'
@@ -13,7 +14,7 @@ Rails.application.routes.draw do
   get 'movies/new', to: 'movies#new', as: 'new_movie'
   #if we dont do /new then there will be conflict with first route
   get 'movies/:id', to: 'movies#show', as: 'movie'
-  get 'movies/:id/edit', to: 'movies#edit' as: "edit_movie"
+  get 'movies/:id/edit', to: 'movies#edit', as: 'edit_movie'
   put 'movies/:id', to: 'movies#update'
   patch 'movies/:id', to: 'movies#update'
   # delete 'movies/:id', to 'movies#destroy' 
