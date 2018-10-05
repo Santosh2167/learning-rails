@@ -1,0 +1,27 @@
+<h1>New Products</h1>
+
+<form action="/products" method="post">
+    <div>
+        <label for="name">Name</label>
+        <input name="product['name']" id ="name" placeholder="name"/>
+    </div>
+    <div>
+        <label for="brand">Brand</label>
+        <input name="product['brand']" placeholder="brand"/>
+    </div>
+    <div>
+        <label for="qty">Quantity</label>
+        <input name="product['qty']" placeholder="qty"/>
+    </div>
+    <div>
+        <label for="category">Category</label>
+        <input name="product['category']" placeholder="category"/>
+    </div>
+    <div>
+        <label for="price">Price</label>
+        <input name="product['price']" placeholder="price"/>
+    </div>
+
+    <input type="submit" value="Create Product"/>
+
+</form>
